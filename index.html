@@ -3,25 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>247 CV Solutions - Professional Career Services</title>
+    <title>247 CV Solutions - Hiring & Onboarding SMS Program</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #333; line-height: 1.6; }
         .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-align: center; padding: 40px 20px; }
         .header h1 { font-size: 2.5em; margin-bottom: 8px; }
         .header p { font-size: 1.1em; opacity: 0.9; }
-        .opt-in-section { background: #f8f9ff; border: 2px solid #667eea; border-radius: 12px; padding: 30px; margin: 30px auto; max-width: 800px; }
-        .opt-in-section h2 { color: #667eea; margin-bottom: 8px; font-size: 1.5em; }
-        .opt-in-section .subtitle { color: #666; margin-bottom: 20px; }
-        .form-group { margin-bottom: 16px; }
-        .form-group label { display: block; font-weight: 600; margin-bottom: 6px; }
-        .form-group input[type="text"], .form-group input[type="email"], .form-group input[type="tel"] { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 1em; }
-        .consent-group { margin: 20px 0; padding: 16px; background: #fff; border-radius: 8px; border: 1px solid #e0e0e0; }
-        .consent-group label { display: flex; align-items: flex-start; gap: 10px; cursor: pointer; font-size: 0.95em; line-height: 1.5; }
-        .consent-group input[type="checkbox"] { margin-top: 4px; width: 18px; height: 18px; flex-shrink: 0; }
-        .opt-in-btn { background: #667eea; color: white; border: none; padding: 14px 32px; font-size: 1.1em; border-radius: 8px; cursor: pointer; width: 100%; font-weight: 600; }
-        .opt-in-btn:hover { background: #5a6fd6; }
-        .opt-in-disclosure { font-size: 0.85em; color: #777; margin-top: 12px; line-height: 1.5; }
+        .intro-section { background: #f8f9ff; border: 2px solid #667eea; border-radius: 12px; padding: 30px; margin: 30px auto; max-width: 800px; }
+        .intro-section h2 { color: #667eea; margin-bottom: 8px; font-size: 1.5em; }
+        .intro-section .subtitle { color: #666; margin-bottom: 20px; }
+        .intro-section p { margin-bottom: 12px; }
         .policy-section { background: white; border-radius: 12px; padding: 30px; margin: 20px auto; max-width: 800px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
         .policy-section h2 { color: #667eea; margin-bottom: 16px; }
         .policy-section h3 { margin-top: 20px; margin-bottom: 8px; }
@@ -35,103 +27,96 @@
     </style>
 </head>
 <body>
-<div class="header">
-    <h1>247 CV Solutions</h1>
-    <p>Professional Career Services</p>
-</div>
-<div class="opt-in-section" id="sms-opt-in">
-    <h2>Stay Updated via SMS</h2>
-    <p class="subtitle">Get notified about your CV order status, appointment reminders, and support updates.</p>
-    <form id="smsOptInForm" onsubmit="event.preventDefault(); document.getElementById('formSuccess').style.display='block'; this.style.display='none';">
-        <div class="form-group">
-            <label for="fullName">Full Name</label>
-            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
-        </div>
-        <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-        </div>
-        <div class="form-group">
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" placeholder="(213) 555-0100" required>
-        </div>
-        <div class="consent-group">
-            <label>
-                <input type="checkbox" id="smsConsent" name="smsConsent" required>
-                <span>I agree to receive SMS/text message notifications from <strong>247 CV Solutions</strong> regarding my order status, appointment reminders, and customer support updates. Message frequency varies. Message and data rates may apply. Reply <strong>STOP</strong> to opt out at any time. Reply <strong>HELP</strong> for help. View our <a href="#privacy-policy">Privacy Policy</a> and <a href="#terms-of-service">Terms of Service</a>.</span>
-            </label>
-        </div>
-        <button type="submit" class="opt-in-btn">Sign Up for SMS Notifications</button>
-        <p class="opt-in-disclosure">By clicking "Sign Up for SMS Notifications," you consent to receive automated text messages from 247 CV Solutions at the phone number provided. Consent is not a condition of purchase. You can opt out at any time by replying STOP.</p>
-    </form>
-    <div id="formSuccess" style="display:none; text-align:center; padding:20px;">
-        <h3 style="color: #667eea;">Thank you for signing up!</h3>
-        <p>You will now receive SMS notifications from 247 CV Solutions.</p>
+    <div class="header">
+        <h1>247 CV Solutions</h1>
+        <p>Hiring &amp; Onboarding SMS Program</p>
     </div>
-</div>
-<div class="policy-section" id="privacy-policy">
-    <h2>Privacy Policy</h2>
-    <p><strong>Last Updated:</strong> February 2, 2026</p>
-    <h3>Introduction</h3>
-    <p>247 CV Solutions is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our services, including SMS/text messaging services.</p>
-    <h3>Information We Collect</h3>
-    <ul>
-        <li><strong>Personal Information:</strong> name, email, phone number</li>
-        <li><strong>Communication Data:</strong> SMS messages</li>
-        <li><strong>Usage Data:</strong> interaction with our services</li>
-    </ul>
-    <h3>SMS/Text Messaging</h3>
-    <ul>
-        <li><strong>Message Frequency:</strong> Varies based on your interactions</li>
-        <li><strong>Message and Data Rates:</strong> May apply. Contact your carrier for details.</li>
-    </ul>
-    <p>By opting in, you consent to receive: service notifications, account updates, promotional offers (if opted in), and customer support messages.</p>
-    <h3>How to Opt-In</h3>
-    <ul>
-        <li>Website form with consent checkbox (see <a href="#sms-opt-in">SMS Sign-Up form</a> above)</li>
-        <li>Texting JOIN or START to our number</li>
-        <li>Consent via our app or in-person</li>
-    </ul>
-    <h3>How to Opt-Out</h3>
-    <div class="highlight-box">
-        <p><strong>Reply STOP to any message to stop receiving SMS.</strong></p>
-        <p>Or email <a href="mailto:support@247cv.com">support@247cv.com</a></p>
+
+    <div class="intro-section" id="program-overview">
+        <h2>About this SMS Program</h2>
+        <p class="subtitle">Communications between recruiters and job applicants at our hospitality venue clients.</p>
+        <p>247 CV Solutions operates an SMS communications program on behalf of restaurant and hospitality venues that use our hiring and onboarding software. The program delivers messages to job applicants and newly hired employees regarding their application, interview scheduling, hiring decisions, and onboarding paperwork.</p>
+        <h3>How recipients opt in</h3>
+        <p>Opt-in occurs when an applicant submits an employment application through the QR-code-based public application form posted at participating venue locations. The form includes a required SMS-consent checkbox with full disclosure of message types, frequency, and opt-out instructions. Express written consent is captured with a per-applicant timestamp at the time of application submission. There is no website-based opt-in for this program.</p>
+        <h3>How recipients opt out</h3>
+        <p>Reply <strong>STOP</strong> to any message at any time. The opt-out is honored immediately and applies to all future messages from this program.</p>
     </div>
-    <h3>Data Sharing</h3>
-    <p>We do not sell your information. We may share with service providers, legal authorities when required, and partners with your consent.</p>
-    <h3>Contact Us</h3>
-    <div class="contact-box">
-        <p><strong>247 CV Solutions</strong></p>
-        <p>Email: <a href="mailto:support@247cv.com">support@247cv.com</a></p>
-        <p>Text <strong>HELP</strong> for SMS support.</p>
+
+    <div class="policy-section" id="privacy-policy">
+        <h2>Privacy Policy</h2>
+        <p><strong>Last Updated:</strong> May 9, 2026</p>
+
+        <h3>Introduction</h3>
+        <p>247 CV Solutions is committed to protecting the privacy of job applicants and employees of the venues we serve. This Privacy Policy explains how we collect, use, and safeguard your information when you interact with our hiring and onboarding SMS program.</p>
+
+        <h3>Information We Collect</h3>
+        <ul>
+            <li><strong>Application Information:</strong> name, email, phone number, work history, and other details provided through the venue's QR-code application form</li>
+            <li><strong>Communication Data:</strong> SMS messages exchanged between you and the recruiter, including timestamps and delivery status</li>
+            <li><strong>Onboarding Information (if hired):</strong> information you submit through the secure onboarding form (e.g., address, tax withholding selections, signature)</li>
+        </ul>
+
+        <h3>SMS/Text Messaging</h3>
+        <ul>
+            <li><strong>Message Frequency:</strong> Varies per applicant. Typically 3 to 10 messages from application submission through your first day of work.</li>
+            <li><strong>Message and Data Rates:</strong> May apply. Contact your wireless carrier for details.</li>
+        </ul>
+        <p>By submitting a job application via the QR-code form and checking the SMS-consent box, you consent to receive SMS messages from the venue and 247 CV Solutions about your application status, interview scheduling, hiring decisions, and (if hired) onboarding tasks. Consent is not a condition of employment.</p>
+
+        <h3>How to Opt-In</h3>
+        <ul>
+            <li>Submit a job application via the QR-code application form posted at the venue location, and check the SMS-consent box on the form.</li>
+        </ul>
+
+        <h3>How to Opt-Out</h3>
+        <div class="highlight-box">
+            <p><strong>Reply STOP to any message to stop receiving SMS.</strong></p>
+            <p>Or email <a href="mailto:support@247cv.com">support@247cv.com</a></p>
+        </div>
+
+        <h3>Data Sharing</h3>
+        <p>We do not sell your information. We share information only with the venue you applied to (so they can review your application and onboard you if hired), with service providers who help us operate the platform (such as Twilio for SMS delivery), and with legal authorities when required by law. We do not share your information with third parties for marketing purposes.</p>
+
+        <h3>Contact Us</h3>
+        <div class="contact-box">
+            <p><strong>247 CV Solutions</strong></p>
+            <p>202 S Raymond Ave #302, Pasadena, CA 91103</p>
+            <p>Email: <a href="mailto:support@247cv.com">support@247cv.com</a></p>
+            <p>Text <strong>HELP</strong> for SMS support.</p>
+        </div>
     </div>
-</div>
-<div class="policy-section" id="terms-of-service">
-    <h2>Terms of Service</h2>
-    <h3>SMS Terms and Conditions</h3>
-    <p>By opting in to SMS notifications from 247 CV Solutions, you agree to the following:</p>
-    <ul>
-        <li>You confirm you are the owner or authorized user of the phone number provided.</li>
-        <li>You consent to receive automated SMS/text messages from 247 CV Solutions.</li>
-        <li>You understand that consent is not a condition of any purchase.</li>
-        <li>You acknowledge that message and data rates may apply.</li>
-        <li>Message frequency varies based on account activity and service interactions.</li>
-    </ul>
-    <h3>Program Details</h3>
-    <ul>
-        <li><strong>Program Name:</strong> 247 CV Solutions SMS Notifications</li>
-        <li><strong>Message Types:</strong> Order confirmations, service status updates, appointment reminders, and customer support</li>
-        <li><strong>Message Frequency:</strong> Varies; typically 2-5 messages per month</li>
-        <li><strong>Opt-Out:</strong> Reply <strong>STOP</strong> to any message to unsubscribe</li>
-        <li><strong>Help:</strong> Reply <strong>HELP</strong> for assistance, or email <a href="mailto:support@247cv.com">support@247cv.com</a></li>
-        <li><strong>Support Contact:</strong> <a href="mailto:support@247cv.com">support@247cv.com</a></li>
-    </ul>
-    <div class="highlight-box">
-        <p><strong>Carriers are not liable for delayed or undelivered messages.</strong></p>
+
+    <div class="policy-section" id="terms-of-service">
+        <h2>Terms of Service</h2>
+
+        <h3>SMS Terms and Conditions</h3>
+        <p>By submitting a job application via our QR-code form and checking the SMS-consent box, you agree to the following:</p>
+        <ul>
+            <li>You confirm you are the owner or authorized user of the phone number provided on the application.</li>
+            <li>You consent to receive automated and non-automated SMS/text messages from 247 CV Solutions and the venue you applied to, regarding your application and (if hired) onboarding.</li>
+            <li>You understand that SMS consent is not a condition of employment.</li>
+            <li>You acknowledge that message and data rates may apply.</li>
+            <li>Message frequency varies based on the stage of your application and onboarding process.</li>
+        </ul>
+
+        <h3>Program Details</h3>
+        <ul>
+            <li><strong>Program Name:</strong> 247 CV Solutions Hiring &amp; Onboarding SMS</li>
+            <li><strong>Message Types:</strong> interview invitations, interview reminders, hiring decision notifications, mobile links to onboarding paperwork, recruiter-to-applicant chat replies, day-one welcome reminders</li>
+            <li><strong>Message Frequency:</strong> Varies per applicant; typically 3 to 10 messages from application submission through your first day of work</li>
+            <li><strong>Opt-In:</strong> Submit a job application via the QR-code form posted at the venue location; check the SMS-consent box on that form</li>
+            <li><strong>Opt-Out:</strong> Reply <strong>STOP</strong> to any message to unsubscribe</li>
+            <li><strong>Help:</strong> Reply <strong>HELP</strong> for assistance, or email <a href="mailto:support@247cv.com">support@247cv.com</a></li>
+            <li><strong>Support Contact:</strong> <a href="mailto:support@247cv.com">support@247cv.com</a></li>
+        </ul>
+
+        <div class="highlight-box">
+            <p><strong>Carriers are not liable for delayed or undelivered messages.</strong></p>
+        </div>
     </div>
-</div>
-<div class="footer">
-    <p>&copy; 2026 247 CV Solutions. All rights reserved.</p>
-</div>
+
+    <div class="footer">
+        <p>&copy; 2026 247 CV Solutions. All rights reserved.</p>
+    </div>
 </body>
 </html>
